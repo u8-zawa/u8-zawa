@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi <img src="https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/icons/wave.gif" width="30px">
 
 <!--
 **u8-zawa/u8-zawa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
