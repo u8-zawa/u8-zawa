@@ -1,10 +1,8 @@
-### Hi <img src="https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/icons/wave.gif" width="30px">
+## Hi <img src="https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/icons/wave.gif" width="30px">
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=u8-zawa&theme=github)
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=u8-zawa&theme=github)
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=u8-zawa&theme=github)
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=u8-zawa&theme=github)
-![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=u8-zawa&theme=github&utcOffset=8)
+<a href="https://twitter.com/zawa__713__" target="_blank" rel="noreferrer">
+<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/zawa__713__?style=social">
+</a>  
 
 <!--
 **u8-zawa/u8-zawa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -20,3 +18,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=u8-zawa&show_icons=true&theme=github)  
+[![](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
