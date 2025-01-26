@@ -1,22 +1,30 @@
-# Hi ![wave](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/icons/wave.gif)
+# Hi there, I'm u8-zawa! 👋
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/zawa__713__?style=social)](https://twitter.com/zawa__713__)
+Welcome to my GitHub profile! I'm a passionate software developer with a love for coding, learning new technologies, and contributing to open-source projects.
 
-<!--
-**u8-zawa/u8-zawa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
 
-Here are some ideas to get you started:
+- 🌱 I'm currently learning **PHP, JavaScript, TypeScript, React, Next.js, Docker, Object Detection, and Local LLM**.
+- 👯 I'm looking to collaborate on **open-source projects** related to **Frontend/Backend Development, Object Detection, and Mobile Applications**.
+- 💬 Ask me about **Mobile App Development and Machine Learning** (I'm still learning but happy to share what I know!)
+- ⚡ Fun fact: **I love exploring local ramen shops and watching movies at theaters in my free time!**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=u8-zawa&show_icons=true&theme=github)  
+## My Skills
+
+- **Languages:** C, Python, Java, Dart, JavaScript, PHP, C++, C#, Go, TypeScript
+- **Frameworks and Libraries:** Flutter, Spring Boot, Flask, TensorFlow, Next.js, React
+- **Tools and Platforms:** Docker, AWS, Azure, Arduino, Unity
+- **Other Skills:** Object Detection (YOLO, SSD-MobileNet v2, Mobile Object Localizer v1), HoloLens2, Muse2 (EEG), M5Stack, ESP32
+
+## GitHub Stats
+
+![u8-zawa's GitHub stats](https://github-readme-stats.vercel.app/api?username=u8-zawa&count_private=true&show_icons=true&theme=github)
 [![Repositories per Language](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 [![Most Commit Language](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 [![GitHub Stats](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+
+## Connect with Me
+
+[![X Follow](https://img.shields.io/twitter/follow/zawa__713__?style=social)](https://x.com/zawa__713__)
+
+Thanks for visiting my profile! 😊
