@@ -1,8 +1,6 @@
-## Hi <img src="https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/icons/wave.gif" width="30px">
+# Hi ![wave](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/icons/wave.gif)
 
-<a href="https://twitter.com/zawa__713__" target="_blank" rel="noreferrer">
-<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/zawa__713__?style=social">
-</a>  
+[![Twitter Follow](https://img.shields.io/twitter/follow/zawa__713__?style=social)](https://twitter.com/zawa__713__)
 
 <!--
 **u8-zawa/u8-zawa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -19,6 +17,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=u8-zawa&show_icons=true&theme=github)  
-[![](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![Repositories per Language](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![Most Commit Language](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![GitHub Stats](https://raw.githubusercontent.com/u8-zawa/u8-zawa/main/profile-summary-card-output/github/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
