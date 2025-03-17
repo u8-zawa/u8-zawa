@@ -1,4 +1,4 @@
-# Hi there, I'm u8-zawa! 👋
+# Hi there👋
 
 ## GitHub Stats
 
