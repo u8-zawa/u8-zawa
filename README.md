@@ -2,4 +2,8 @@
 
 ## GitHub Stats
 
-![u8-zawa's GitHub stats](https://github-readme-stats.vercel.app/api?username=u8-zawa&count_private=true&show_icons=true&theme=github)
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=u8-zawa&theme=nord_bright)
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=u8-zawa&theme=nord_bright)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=u8-zawa&theme=nord_bright)
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=u8-zawa&theme=nord_bright)
+![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=u8-zawa&theme=nord_bright&utcOffset=9)
