@@ -1,0 +1,399 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1800" background="#ffffff" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="style_region" value="" style="group;rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#0078D4;strokeWidth=2;align=left;verticalAlign=top;fontStyle=1;fontSize=18;spacing=10;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="0" height="0" as="geometry" />
+    </mxCell>
+    <mxCell id="style_vnet" value="" style="group;rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F3E6;strokeColor=#248814;strokeWidth=2;align=left;verticalAlign=top;fontStyle=1;fontSize=16;spacing=10;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="0" height="0" as="geometry" />
+    </mxCell>
+    <mxCell id="style_zone" value="" style="group;rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0078D4;strokeWidth=2;dashed=1;align=center;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="0" height="0" as="geometry" />
+    </mxCell>
+    <mxCell id="style_subnet" value="" style="group;rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=1;align=left;verticalAlign=top;fontStyle=0;fontSize=12;spacing=5;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="0" height="0" as="geometry" />
+    </mxCell>
+    <mxCell id="style_comp" value="" style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="0" height="0" as="geometry" />
+    </mxCell>
+
+    <object label="Region: Japan East" id="region_1">
+      <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#0078D4;strokeWidth=2;align=left;verticalAlign=top;fontStyle=1;fontSize=20;spacing=15;arcSize=0;" vertex="1" parent="1">
+        <mxGeometry x="40" y="240" width="2320" height="1500" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Virtual Network (10.0.0.0/16)" id="vnet_1">
+      <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F3E6;strokeColor=#248814;strokeWidth=2;align=left;verticalAlign=top;fontStyle=1;fontSize=16;spacing=10;arcSize=5;" vertex="1" parent="region_1">
+        <mxGeometry x="40" y="60" width="2240" height="1400" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Shared / Management Services" id="shared_area">
+      <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;dashed=1;align=center;verticalAlign=top;" vertex="1" parent="vnet_1">
+        <mxGeometry x="870" y="1250" width="500" height="120" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Availability Zone 1" id="zone_1">
+      <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0078D4;strokeWidth=3;dashed=1;align=center;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="vnet_1">
+        <mxGeometry x="40" y="60" width="1050" height="1150" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Availability Zone 2" id="zone_2">
+      <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0078D4;strokeWidth=3;dashed=1;align=center;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="vnet_1">
+        <mxGeometry x="1150" y="60" width="1050" height="1150" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Public Subnet A (10.0.1.0/24)" id="subnet_pub_1">
+      <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="zone_1">
+        <mxGeometry x="30" y="40" width="990" height="250" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Private Subnet A (10.0.10.0/24)" id="subnet_pri_1">
+      <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="zone_1">
+        <mxGeometry x="30" y="320" width="990" height="800" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Public Subnet B (10.0.2.0/24)" id="subnet_pub_2">
+      <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="zone_2">
+        <mxGeometry x="30" y="40" width="990" height="250" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Private Subnet B (10.0.20.0/24)" id="subnet_pri_2">
+      <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="zone_2">
+        <mxGeometry x="30" y="320" width="990" height="800" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Internet / Users" id="ext_user">
+      <mxCell style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="1100" y="20" width="200" height="120" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Azure DNS" id="ext_dns">
+      <mxCell style="shape=mxgraph.azure.azure_dns;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+        <mxGeometry x="850" y="160" width="100" height="60" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Azure Front Door" id="ext_fd">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+        <mxGeometry x="1120" y="160" width="160" height="60" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="DDoS Protection" id="ext_ddos">
+      <mxCell style="shape=shield;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#DD344C;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+        <mxGeometry x="1150" y="240" width="100" height="80" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Azure WAF" id="ext_waf">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#DD344C;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+        <mxGeometry x="1120" y="340" width="160" height="60" as="geometry" />
+      </mxCell>
+    </object>
+    
+    <object label="Static Website&#xa;(Blob Storage)" id="comp_static_web">
+      <mxCell style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#7AA116;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+        <mxGeometry x="1450" y="160" width="120" height="80" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Application Gateway&#xa;(WAF)" id="comp_appgw_1">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pub_1">
+        <mxGeometry x="100" y="80" width="160" height="80" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="NAT Gateway" id="comp_nat_1">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#248814;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pub_1">
+        <mxGeometry x="700" y="80" width="120" height="60" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Autoscale Group" id="group_ca_1">
+      <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D86613;strokeWidth=2;dashed=1;align=left;verticalAlign=top;fontStyle=1;" vertex="1" parent="subnet_pri_1">
+        <mxGeometry x="50" y="50" width="600" height="400" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Container App 1" id="ca_1_1">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="group_ca_1">
+        <mxGeometry x="30" y="40" width="140" height="60" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Container App 2" id="ca_1_2">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="group_ca_1">
+        <mxGeometry x="200" y="140" width="140" height="60" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Container App 3" id="ca_1_3">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="group_ca_1">
+        <mxGeometry x="370" y="240" width="140" height="60" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Azure SQL&#xa;(Primary)" id="comp_sql_1">
+      <mxCell style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#C925D1;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pri_1">
+        <mxGeometry x="100" y="550" width="120" height="80" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Redis Cache&#xa;(Primary)" id="comp_redis_1">
+      <mxCell style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#ED7100;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pri_1">
+        <mxGeometry x="300" y="550" width="120" height="80" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Blob Storage&#xa;(Logs)" id="comp_blob_1">
+      <mxCell style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#7AA116;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pri_1">
+        <mxGeometry x="500" y="550" width="120" height="80" as="geometry" />
+      </mxCell>
+    </object>
+
+
+    <object label="Application Gateway&#xa;(WAF)" id="comp_appgw_2">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pub_2">
+        <mxGeometry x="100" y="80" width="160" height="80" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="NAT Gateway" id="comp_nat_2">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#248814;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pub_2">
+        <mxGeometry x="700" y="80" width="120" height="60" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Autoscale Group" id="group_ca_2">
+      <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D86613;strokeWidth=2;dashed=1;align=left;verticalAlign=top;fontStyle=1;" vertex="1" parent="subnet_pri_2">
+        <mxGeometry x="50" y="50" width="600" height="400" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Container App 4" id="ca_2_1">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="group_ca_2">
+        <mxGeometry x="30" y="40" width="140" height="60" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Container App 5" id="ca_2_2">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="group_ca_2">
+        <mxGeometry x="200" y="140" width="140" height="60" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Container App 6" id="ca_2_3">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0078D4;strokeWidth=2;fontStyle=1;" vertex="1" parent="group_ca_2">
+        <mxGeometry x="370" y="240" width="140" height="60" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Azure SQL&#xa;(Secondary)" id="comp_sql_2">
+      <mxCell style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#C925D1;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pri_2">
+        <mxGeometry x="100" y="550" width="120" height="80" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Redis Cache&#xa;(Replica)" id="comp_redis_2">
+      <mxCell style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#ED7100;strokeWidth=2;fontStyle=1;" vertex="1" parent="subnet_pri_2">
+        <mxGeometry x="300" y="550" width="120" height="80" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Azure Key Vault" id="comp_kv">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#DD344C;strokeWidth=2;fontStyle=1;" vertex="1" parent="shared_area">
+        <mxGeometry x="30" y="40" width="120" height="60" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="App Configuration" id="comp_appconfig">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#E7157B;strokeWidth=2;fontStyle=1;" vertex="1" parent="shared_area">
+        <mxGeometry x="180" y="40" width="120" height="60" as="geometry" />
+      </mxCell>
+    </object>
+    <object label="Azure Monitor /&#xa;Log Analytics" id="comp_monitor">
+      <mxCell style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#E7157B;strokeWidth=2;fontStyle=1;" vertex="1" parent="shared_area">
+        <mxGeometry x="330" y="30" width="120" height="80" as="geometry" />
+      </mxCell>
+    </object>
+
+    <object label="Azure Container&#xa;Registry (ACR)" id="comp_acr">
+      <mxCell style="shape=rect;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7AA116;strokeWidth=2;fontStyle=1;" vertex="1" parent="vnet_1">
+        <mxGeometry x="870" y="1100" width="140" height="70" as="geometry" />
+      </mxCell>
+    </object>
+
+
+    <mxCell id="e1" edge="1" parent="1" source="ext_user" target="ext_fd">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#0066CC;strokeWidth=3;" vertex="1" connectable="0">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="HTTPS:443" id="lbl_e1">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e1">
+            <mxGeometry x="-0.2" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e2" edge="1" parent="1" source="ext_fd" target="ext_waf">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#0066CC;strokeWidth=3;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </mxCell>
+
+    <mxCell id="e3_1" edge="1" parent="1" source="ext_waf" target="comp_appgw_1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1200" y="450" />
+          <mxPoint x="320" y="450" />
+        </Array>
+      </mxGeometry>
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#0066CC;strokeWidth=3;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="HTTPS:443" id="lbl_e3_1">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e3_1">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e3_2" edge="1" parent="1" source="ext_waf" target="comp_appgw_2">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+            <mxPoint x="1200" y="450" />
+            <mxPoint x="1430" y="450" />
+        </Array>
+      </mxGeometry>
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#0066CC;strokeWidth=3;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </mxCell>
+
+    <mxCell id="e4_1" edge="1" parent="1" source="comp_appgw_1" target="ca_1_1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#ED7100;strokeWidth=2;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="HTTP:80/443" id="lbl_e4_1">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e4_1">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e_acr" edge="1" parent="1" source="comp_acr" target="group_ca_1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#7AA116;strokeWidth=2;dashed=1;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="Image Pull" id="lbl_e_acr">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_acr">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e_sql_1" edge="1" parent="1" source="ca_1_3" target="comp_sql_1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#C925D1;strokeWidth=2;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="TDS:1433" id="lbl_e_sql_1">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_sql_1">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e_redis_1" edge="1" parent="1" source="ca_1_3" target="comp_redis_1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#C925D1;strokeWidth=2;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="Redis:6380" id="lbl_e_redis_1">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_redis_1">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+     <mxCell id="e_blob_1" edge="1" parent="1" source="ca_1_3" target="comp_blob_1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#7AA116;strokeWidth=2;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="HTTPS:443" id="lbl_e_blob_1">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_blob_1">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e_static" edge="1" parent="1" source="ext_fd" target="comp_static_web">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+            <mxPoint x="1280" y="200" />
+        </Array>
+      </mxGeometry>
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#0066CC;strokeWidth=2;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="HTTPS:443" id="lbl_e_static">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_static">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e_kv" edge="1" parent="1" source="comp_sql_1" target="comp_kv">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+            <mxPoint x="200" y="1320" />
+        </Array>
+      </mxGeometry>
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#DD344C;strokeWidth=1;dashed=1;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="Key Vault Ref" id="lbl_e_kv">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_kv">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e_monitor" edge="1" parent="1" source="comp_appgw_1" target="comp_monitor">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+            <mxPoint x="100" y="1400" />
+            <mxPoint x="1260" y="1400" />
+        </Array>
+      </mxGeometry>
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E7157B;strokeWidth=1;dashed=1;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="Logs/Metrics" id="lbl_e_monitor">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_monitor">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+    <mxCell id="e_db_repl" edge="1" parent="1" source="comp_sql_1" target="comp_sql_2">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#C925D1;strokeWidth=2;dashed=1;" vertex="1" connectable="0">
+         <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <object label="Replication" id="lbl_e_db_repl">
+        <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_db_repl">
+            <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+      </object>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
