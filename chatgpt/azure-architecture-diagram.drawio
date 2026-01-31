@@ -1,0 +1,298 @@
+<mxfile host="app.diagrams.net" modified="2026-01-31T00:00:00.000Z" agent="ChatGPT" version="22.1.0" type="device">
+  <diagram id="azure-arch" name="Azure Architecture">
+    <mxGraphModel dx="2400" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ===== Region frame ===== -->
+        <mxCell id="10" value="Region: Japan East" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FB;strokeColor=#0078D4;strokeWidth=3;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="50" y="40" width="2300" height="1720" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== VNet frame ===== -->
+        <mxCell id="20" value="Virtual Network (VNet)&#10;10.0.0.0/16" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F3E6;strokeColor=#248814;strokeWidth=3;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="110" width="2200" height="1600" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AZ frames ===== -->
+        <mxCell id="30" value="Availability Zone 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0078D4;strokeWidth=2;dashed=1;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="140" y="170" width="1040" height="1480" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="40" value="Availability Zone 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0078D4;strokeWidth=2;dashed=1;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="170" width="1040" height="1480" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Subnets (AZ1) ===== -->
+        <mxCell id="31" value="Public Subnet A&#10;10.0.1.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="180" y="230" width="960" height="420" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="32" value="Private Subnet A&#10;10.0.10.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="180" y="710" width="960" height="900" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Subnets (AZ2) ===== -->
+        <mxCell id="41" value="Public Subnet B&#10;10.0.2.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="230" width="960" height="420" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="42" value="Private Subnet B&#10;10.0.20.0/24" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F6F7;strokeColor=#00A4A6;strokeWidth=2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="710" width="960" height="900" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== External / Edge components (top row) ===== -->
+        <mxCell id="100" value="Internet / Users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="140" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="101" value="Azure DNS" style="shape=mxgraph.azure.azure_dns;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="110" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="102" value="Azure Front Door" style="shape=mxgraph.azure.azure_front_door;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="120" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="103" value="DDoS Protection" style="shape=mxgraph.azure.azure_ddos_protection;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="104" value="Azure WAF" style="shape=mxgraph.azure.azure_web_application_firewall;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="120" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Shared platform services (center top) ===== -->
+        <mxCell id="110" value="Azure Container Registry (ACR)" style="shape=mxgraph.azure.azure_container_registry;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="210" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="111" value="Azure App Configuration" style="shape=mxgraph.azure.azure_app_configuration;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="370" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="112" value="Azure Key Vault" style="shape=mxgraph.azure.azure_key_vault;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="370" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="113" value="Azure Monitor&#10;/ Log Analytics" style="shape=mxgraph.azure.azure_monitor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="210" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="114" value="Azure Blob Storage&#10;(Logs)" style="shape=mxgraph.azure.azure_storage_account;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="560" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="115" value="Azure Blob Storage&#10;Static Website" style="shape=mxgraph.azure.azure_storage_account;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="560" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AZ1 Public components ===== -->
+        <mxCell id="200" value="Application Gateway&#10;(AZ1)" style="shape=mxgraph.azure.azure_application_gateway;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="201" value="NAT Gateway&#10;(AZ1)" style="shape=mxgraph.azure.azure_nat_gateway;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="320" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AZ2 Public components ===== -->
+        <mxCell id="210" value="Application Gateway&#10;(AZ2)" style="shape=mxgraph.azure.azure_application_gateway;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="320" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="211" value="NAT Gateway&#10;(AZ2)" style="shape=mxgraph.azure.azure_nat_gateway;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="320" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AZ1 Private: Container Apps (autoscale frame + stair layout) ===== -->
+        <mxCell id="300" value="Azure Container Apps (AZ1)&#10;Auto-scale enabled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D86613;strokeWidth=2;dashed=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="820" width="520" height="380" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="301" value="Container App #1" style="shape=mxgraph.azure.azure_container_apps;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="880" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="302" value="Container App #2" style="shape=mxgraph.azure.azure_container_apps;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="980" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="303" value="Container App #3" style="shape=mxgraph.azure.azure_container_apps;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1080" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AZ1 Private: SQL Primary ===== -->
+        <mxCell id="310" value="Azure SQL Database&#10;Primary (AZ1)" style="shape=mxgraph.azure.azure_sql_database;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="840" width="260" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AZ2 Private: Container Apps (autoscale frame + stair layout) ===== -->
+        <mxCell id="400" value="Azure Container Apps (AZ2)&#10;Auto-scale enabled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D86613;strokeWidth=2;dashed=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="820" width="520" height="380" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="401" value="Container App #4" style="shape=mxgraph.azure.azure_container_apps;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="880" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="402" value="Container App #5" style="shape=mxgraph.azure.azure_container_apps;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="980" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="403" value="Container App #6" style="shape=mxgraph.azure.azure_container_apps;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="1080" width="140" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AZ2 Private: SQL Secondary ===== -->
+        <mxCell id="410" value="Azure SQL Database&#10;Secondary (AZ2)" style="shape=mxgraph.azure.azure_sql_database;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="840" width="260" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Redis (Primary/Replica) ===== -->
+        <mxCell id="500" value="Azure Cache for Redis&#10;Primary (AZ1)" style="shape=mxgraph.azure.azure_cache_redis;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1030" width="260" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="501" value="Azure Cache for Redis&#10;Replica (AZ2)" style="shape=mxgraph.azure.azure_cache_redis;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="1030" width="260" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Optional label for zone-redundant database ===== -->
+        <mxCell id="520" value="Zone-redundant (Primary: AZ1 / Secondary: AZ2)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="780" width="520" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ===================== Connections ===================== -->
+
+        <!-- External path: Internet -> DNS -> Front Door -->
+        <mxCell id="900" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#0066CC;fontStyle=1;" edge="1" parent="1" source="100" target="101">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="901" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#0066CC;fontStyle=1;" edge="1" parent="1" source="101" target="102">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Front Door -> DDoS -> WAF (security in red) -->
+        <mxCell id="902" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#DD344C;fontStyle=1;" edge="1" parent="1" source="102" target="103">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="903" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#DD344C;fontStyle=1;" edge="1" parent="1" source="103" target="104">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- WAF -> App Gateways (Public endpoint) -->
+        <mxCell id="904" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#0066CC;fontStyle=1;" edge="1" parent="1" source="104" target="200">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="250" as="sourcePoint"/>
+            <mxPoint x="360" y="320" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="905" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#0066CC;fontStyle=1;" edge="1" parent="1" source="104" target="210">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1020" y="250" as="sourcePoint"/>
+            <mxPoint x="1440" y="320" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- App Gateway -> Container Apps (internal HTTP) -->
+        <mxCell id="910" value="HTTP:8080" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#ED7100;fontStyle=1;" edge="1" parent="1" source="200" target="301">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="911" value="HTTP:8080" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#ED7100;fontStyle=1;" edge="1" parent="1" source="210" target="401">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ACR -> Container Apps (image pull) -->
+        <mxCell id="920" value="HTTPS:443 (Pull)" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#ED7100;fontStyle=1;" edge="1" parent="1" source="110" target="300">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="921" value="HTTPS:443 (Pull)" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#ED7100;fontStyle=1;" edge="1" parent="1" source="110" target="400">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- App Configuration -> Container Apps (management/monitoring in pink) -->
+        <mxCell id="930" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#E7157B;fontStyle=1;" edge="1" parent="1" source="111" target="300">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="931" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#E7157B;fontStyle=1;" edge="1" parent="1" source="111" target="400">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Key Vault -> SQL (credentials) -->
+        <mxCell id="940" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#E7157B;fontStyle=1;" edge="1" parent="1" source="112" target="310">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="941" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#E7157B;fontStyle=1;" edge="1" parent="1" source="112" target="410">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- App Gateway -> Monitor/Log Analytics -->
+        <mxCell id="950" value="Logs/Metrics" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#E7157B;fontStyle=1;" edge="1" parent="1" source="200" target="113">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="951" value="Logs/Metrics" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#E7157B;fontStyle=1;" edge="1" parent="1" source="210" target="113">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Container Apps -> SQL (DB: TDS 1433) -->
+        <mxCell id="960" value="TDS:1433" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#C925D1;fontStyle=1;" edge="1" parent="1" source="300" target="310">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="961" value="TDS:1433" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#C925D1;fontStyle=1;" edge="1" parent="1" source="300" target="410">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="962" value="TDS:1433" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#C925D1;fontStyle=1;" edge="1" parent="1" source="400" target="310">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="963" value="TDS:1433" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#C925D1;fontStyle=1;" edge="1" parent="1" source="400" target="410">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Container Apps -> Redis (storage in green per your rule) -->
+        <mxCell id="970" value="TCP:6380" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#7AA116;fontStyle=1;" edge="1" parent="1" source="300" target="500">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="971" value="TCP:6380" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#7AA116;fontStyle=1;" edge="1" parent="1" source="300" target="501">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="972" value="TCP:6380" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#7AA116;fontStyle=1;" edge="1" parent="1" source="400" target="500">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="973" value="TCP:6380" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#7AA116;fontStyle=1;" edge="1" parent="1" source="400" target="501">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Container Apps -> Blob Storage (logs) -->
+        <mxCell id="980" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#7AA116;fontStyle=1;" edge="1" parent="1" source="300" target="114">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="981" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#7AA116;fontStyle=1;" edge="1" parent="1" source="400" target="114">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Front Door -> Blob Static Website -->
+        <mxCell id="990" value="HTTPS:443" style="endArrow=block;html=1;rounded=1;strokeWidth=3;strokeColor=#0066CC;fontStyle=1;" edge="1" parent="1" source="102" target="115">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
